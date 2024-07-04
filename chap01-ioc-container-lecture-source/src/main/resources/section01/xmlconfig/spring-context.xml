@@ -4,7 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    MemberDTO member = new MemberDTO(); 생성자 만든 것과 똑같음-->
-    <bean id="member" class="com.ohgiraffers.common.MemberDTO"/>
-
+    <bean id="member" class="com.ohgiraffers.common.MemberDTO">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg name="id" value="user01"/>
+        <constructor-arg index="2">
+            <value>passo1</value>
+        </constructor-arg>
+        <constructor-arg name="name">
+            <value>권은혜</value>
+        </constructor-arg>
+    </bean>
 
 </beans>
