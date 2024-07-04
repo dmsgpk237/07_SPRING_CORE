@@ -24,6 +24,7 @@ public class Application {
         System.out.println(memberDAO.selectMember(1));
         System.out.println(memberDAO.selectMember(2));
 
+        // sout 안에 boardDAO.insertBoard를 넣지 않으면 true 가 나오지 않음.
         System.out.println(memberDAO.insertMember(new MemberDTO(3, "user03", "pass03", "도라도라도라에몽")));
         System.out.println(memberDAO.selectMember(3));
     }

@@ -7,6 +7,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class Application {
     public static void main(String[] args) {
 
+        // ioc 컨테이너 생성
         ApplicationContext context = new GenericXmlApplicationContext("section01/xmlconfig/spring-context.xml");
 
 
