@@ -12,6 +12,13 @@ public class Application {
 
         /*
         * getBeanDefinitionNames : 스프링 컨테이너에서 생성된 bean들의 이름을 배열로 반환한다.
+        * > 그래서 필터 사용해서 제외되는 것과 포함되는 것을 확인했음. 컨테이너 안에 생성되는 beanName들을 본 것!
+            beanName : org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+            beanName : org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+            beanName : org.springframework.context.event.internalEventListenerProcessor
+            beanName : org.springframework.context.event.internalEventListenerFactory
+            beanName : contextConfiguration1220
+            beanName : memberDAO
         * */
 
         String[] beanNames = context.getBeanDefinitionNames();
