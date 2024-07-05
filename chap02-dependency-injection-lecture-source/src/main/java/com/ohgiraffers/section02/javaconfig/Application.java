@@ -14,7 +14,7 @@ public class Application {
         MemberDTO member = context.getBean(MemberDTO.class);
 
         // member 출력
-        System.out.println(" ");
+        System.out.println(member);
 
         // MemberDTO의 personalAccount 객체 출력
         System.out.println(member.getPersonalAccount());
